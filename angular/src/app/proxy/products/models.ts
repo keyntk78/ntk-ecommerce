@@ -10,6 +10,7 @@ export interface CreateUpdateProductDto {
   productType: ProductType;
   sku?: string;
   sortOrder: number;
+  sellPrice: number;
   visiblity: boolean;
   isActive: boolean;
   categoryId?: string;
@@ -23,15 +24,21 @@ export interface ProductListFilterDto extends BaseListFilterDto {
 }
 
 export interface ProductDto {
+  manufacturerId?: string;
   name?: string;
   code?: string;
   slug?: string;
+  productType: ProductType;
+  sku?: string;
   sortOrder: number;
   coverPicture?: string;
   visibility: boolean;
   isActive: boolean;
-  parentId?: string;
+  categoryId?: string;
   seoMetaDescription?: string;
+  description?: string;
+  thumbnailPicture?: string;
+  sellPrice: number;
   id?: string;
 }
 
