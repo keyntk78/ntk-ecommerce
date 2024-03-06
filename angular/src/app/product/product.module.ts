@@ -16,6 +16,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { EditorModule } from 'primeng/editor';
+import { NTKSharedModule } from '../shared/modules/ntk-shared.module';
 @NgModule({
   declarations: [ProductComponent, ProductDetailComponent],
   imports: [
@@ -34,6 +35,7 @@ import { EditorModule } from 'primeng/editor';
     CheckboxModule,
     InputTextareaModule,
     EditorModule,
+    NTKSharedModule,
   ],
   entryComponents: [ProductDetailComponent],
 })
